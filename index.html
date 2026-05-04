@@ -589,7 +589,7 @@ function send(){
   if(selDate)p.push('📅 '+selDate);
   if(selActs.size>0)p.push([...selActs].map(i=>AL[i]).join(' + '));
   if(custom)p.push('💬 '+custom);
-  const msg='Агата выбрала:\n'+p.join('\n');
+  const msg='Я выбрала:\n'+p.join('\n');
   const ov=document.getElementById('overlay');
   ov.classList.add('show');
   setTimeout(()=>{window.location.href='https://t.me/'+TG+'?text='+encodeURIComponent(msg);},900);
